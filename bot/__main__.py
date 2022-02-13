@@ -257,7 +257,7 @@ def main():
         osremove(".restartmsg")
     elif OWNER_ID:
         try:
-            text = "<b>🅱🅾🆃 🆁🅴🆂🆃🅰🆁🆃🅴🅳.... 🅿🅻🅴🅰🆂🅴 🅳🅾🆆🅽🅻🅾🅰🅳 🅸🆃 🅰🅶🅰🅸🅽 🅸🅵 🆈🅾🆄🆁 🅵🅸🅻🅴 🅸🆂 🅽🅾🆃 🅳🅾🅽🅴 🆈🅴🆃!!</b>"
+            text = "<b>🅱🅾🆃  🆁🅴🆂🆃🅰🆁🆃🅴🅳....    𝙿𝚕𝚎𝚊𝚜𝚎 𝚍𝚘𝚠𝚗𝚕𝚘𝚊𝚍 𝚒𝚝 𝚊𝚐𝚊𝚒𝚗 𝚒𝚏 𝚢𝚘𝚞𝚛 𝚍𝚘𝚠𝚗𝚕𝚘𝚊𝚍 𝚒𝚜 𝚗𝚘𝚝 𝚍𝚘𝚗𝚎 𝚢𝚎𝚝...!!</b>"
             bot.sendMessage(chat_id=OWNER_ID, text=text, parse_mode=ParseMode.HTML)
             if AUTHORIZED_CHATS:
                 for i in AUTHORIZED_CHATS:
