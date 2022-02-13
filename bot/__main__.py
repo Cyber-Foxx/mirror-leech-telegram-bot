@@ -63,6 +63,7 @@ def start(update, context):
     buttons = ButtonMaker()
     buttons.buildbutton("🅼🅰🅸🅽 🅶🆁🅾🆄🅿", "https://t.me/GraphicCommunity4")
     buttons.buildbutton("🅲🅷🅰🅽🅽🅴🅻", "https://t.me/MrAnonymouso02")
+    buttons.buildbutton("🅾🆆🅽🅴🆁", "https://t.me/Unknown_Helper_O02")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f'''
@@ -71,10 +72,10 @@ Type /{BotCommands.HelpCommand} to get a list of available commands
 '''
         sendMarkup(start_string, context.bot, update, reply_markup)
     else:
-        sendMarkup('Not Authorized user, deploy your own mirror-leech bot', context.bot, update, reply_markup)
+        sendMarkup('𝐍𝐨𝐭 𝐀𝐮𝐭𝐡𝐨𝐫𝐢𝐳𝐞𝐝 𝐔𝐬𝐞𝐫, 𝐘𝐨𝐮 𝐝𝐨 𝐧𝐨𝐭 𝐡𝐚𝐯𝐞 𝐚𝐜𝐜𝐞𝐬𝐬 𝐭𝐨 𝐮𝐬𝐞 𝐭𝐡𝐢𝐬 𝐛𝐨𝐭🔒', context.bot, update, reply_markup)
 
 def restart(update, context):
-    restart_message = sendMessage("Restarting...", context.bot, update)
+    restart_message = sendMessage("🆁🅴🆂🆃🅰🆁🆃🅸🅽🅶......", context.bot, update)
     if Interval:
         Interval[0].cancel()
     alive.kill()
@@ -175,7 +176,7 @@ help_string_telegraph = f'''<br>
 '''
 
 help = telegraph.create_page(
-        title='Mirror-Leech-Bot Help',
+        title='@Ano_Cloner_bot Help',
         content=help_string_telegraph,
     )["path"]
 
@@ -252,7 +253,7 @@ def main():
     if ospath.isfile(".restartmsg"):
         with open(".restartmsg") as f:
             chat_id, msg_id = map(int, f)
-        bot.edit_message_text("Restarted successfully!", chat_id, msg_id)
+        bot.edit_message_text("🅱🅾🆃 🆁🅴🆂🆃🅰🆁🆃🅴🅳.... 🅿🅻🅴🅰🆂🅴 🅳🅾🆆🅽🅻🅾🅰🅳 🅸🆃 🅰🅶🅰🅸🅽 🅸🅵 🆈🅾🆄🆁 🅵🅸🅻🅴 🅸🆂 🅽🅾🆃 🅳🅾🅽🅴 🆈🅴🆃!!!", chat_id, msg_id)
         osremove(".restartmsg")
     elif OWNER_ID:
         try:
