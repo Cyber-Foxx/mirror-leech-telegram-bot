@@ -57,4 +57,4 @@ class TelegraphHelper:
 			return self.edit_page(path, title, content)
 
 
-telegraph=TelegraphHelper('@Ano_Cloner_bot, 'https://telegra.ph/Ano-Cloner-bot-Help-02-08')
+telegraph=TelegraphHelper('@Ano_Cloner_bot', 'https://telegra.ph/Ano-Cloner-bot-Help-02-08')
