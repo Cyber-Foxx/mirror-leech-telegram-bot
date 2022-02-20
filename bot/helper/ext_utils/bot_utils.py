@@ -107,7 +107,7 @@ def get_progress_bar_string(status):
     p = min(max(p, 0), 100)
     cFull = p // 8
     p_str = '🟩' * cFull
-    p_str += '🟧▒' * (12 - cFull)
+    p_str += '🟧' * (12 - cFull)
     p_str = f"[{p_str}]"
     return p_str
 
